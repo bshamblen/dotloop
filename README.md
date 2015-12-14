@@ -29,9 +29,9 @@ var Dotloop = require('dotloop');
 var api = new Dotloop('your auth token');
 ```
 
-## Callbacks vs Promises
+## Callbacks or Promises
 
-All of the methods below will work with either a standard Javascipt callback function `(error, response)` or promises. This module uses the Bluebird promise library.
+All of the methods below will work with either a standard Javascipt callback function `(error, result)` or promises. This module uses the Bluebird promise library.
 
 ## Methods
 
@@ -53,7 +53,7 @@ All of the methods below will work with either a standard Javascipt callback fun
 
 #### getProfiles(*[callback]*)
 
-Get all profiles associated with user
+Get all profiles associated with user.
 
 **Sample Response**
 ```javascript
@@ -79,7 +79,7 @@ Get all profiles associated with user
 
 #### getLoops(*profileId*, *[callback]*)
 
-Returns a list of up to 50 summaries for loops in a profile. To get the next 50 increment the batch number.
+Returns a list of up to 50 summaries for loops in a profile. To get the next 50, increment the batch number.
 
 **Available Options**
 
