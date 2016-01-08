@@ -287,7 +287,7 @@ Retrieve a list of documents within a loop
 
 #### getLoopDocument(*profileId*, *loopViewId*, *documentId*, *documentName*, *[callback]*)
 
-Returns a PDF for single document. The parameter “documentName” can be any text, it is provided to let the client choose the file name.
+Returns a PDF for single document. The parameter “documentName” can be any text, it is provided to let the client choose the file name. Do not include the file extension in the `documentName`, the file extension will always be `.pdf`.
 
 **Sample Response**
 No example included. The response will be a `Buffer` object with content type of application/pdf.
@@ -391,6 +391,8 @@ Activities associated with document
 
 List of contacts associated with a profile
 
+*Note: this function hasn't been tested. Our API key didn't work for this endpoint*
+
 **Available Options**
 
 | Name        | Description |
@@ -484,6 +486,8 @@ List of up to 5000 summarized employees
 #### getProfileAdmins(*profileId*, *[options]*, *[callback]*)
 
 List of admins associated with profile
+
+*Note: this function hasn't been tested. Our API key didn't work for this endpoint*
 
 **Available Options**
 

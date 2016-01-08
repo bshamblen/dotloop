@@ -17,8 +17,12 @@
     "request": ">=2.9.0",
     "underscore": "*"
   },
+  "devDependencies": {
+    "mocha": "*"
+  },
   "engines": {
     "node": "*"
   },
-  "description": "Dotloop API client"
+  "description": "Dotloop API client",
+  "license": "MIT"
 }
