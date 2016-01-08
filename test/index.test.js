@@ -35,7 +35,7 @@ describe('Test API Enpoints', function() {
 		.then(function(results) {
 			assert.equal(Array.isArray(results), true);
 			assert.notEqual(results.length, 0);
-			firstTransaction = results[1];
+			firstTransaction = results[0];
 			done();
 		})
 		.catch(done);
